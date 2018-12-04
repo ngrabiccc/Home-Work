@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Domaci rad</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+  a{
+      color: blue;
+      text-decoration: none;
+     
+  }
+    </style>
+</head>
+<body>
+    <form action="https://github.com/" >
+      Username:<br>
+      <input type="text"  name="username" placeholder="Pick a username"><br>
+      Email:<br>
+      <input type="email" name ="email" placeholder="you@example.com">
+      <br>Password:<br>
+      <input type="password" name="password" placeholder="Create a password">
+     </form>
+     <p>
+        Make sure it's more than 15 characters,<br>
+        or at least 8 characters,<br>
+        including a number, and a lowercase letter.
+    </p>
+        <form>
+            <input type="submit" style="font-face: 'Comic Sans MS'; font-size: larger; color:white; background-color:green;  border: 2px solid green" formaction="https://github.com/" value=" Sign up for GitHub "> 
+     </form>
+        <span>
+           <br> By clicking "Sign up for GitHub", you agree to our <br> <a href="https://help.github.com/articles/github-terms-of-service/"  target="_blank" >terms of service</a>
+            and <a href="https://help.github.com/articles/github-privacy-statement/"  target="_blank" >privacy statement</a>.<br>We will occasionally send you
+            account related emails.
+        </span>
+        
+
+</body>
+</html>
