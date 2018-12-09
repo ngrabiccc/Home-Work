@@ -5,54 +5,94 @@
     <title>Domaci rad</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
     <style>
+   
+   form{
+     padding: 2% 2%;
+     background-color: white;
+      border-radius: 3px;
+      position:fixed;
+      top:20%;
+      left:30%;
+      width:20%;
+  }
+
+     form input{
+    border-radius: 5px;
+    height: 40px;
+    width: 100%;
+    margin-bottom:10px;
+    box-shadow:inset 0 0 2px #000000;
+    border: 1px;
+     }
+ 
   a{
       color: blue;
       text-decoration: none;
      
   }
+
   a:hover{
-    color: lightblue;
+      color: blue;
+      text-decoration-line: underline;
   }
+
   .button{
         color:white;
-       background-color:green; 
-        border: 2px solid green;
-        border-radius: 20px;
-        padding: 15px 60px;
+        background-color: green;
+       border: 2px solid green;
+        border-radius: 3px;
+        padding: 6% 26%;
         font-size: 15px;
+        margin-bottom: 10px;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
+
   .button:hover{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    color:black;
+    background-color: lightgreen;
+    border: 2px solid lightgreen;
+  }
+
+ 
+  body{
+      margin-left: 10px;
+      background-color: black;
+  }
+
+  p{
+      font-size: 80%;
+      font-family: 'Times New Roman', Times, serif;
+      margin-left: 10px;
+
   }
   
     </style>
 </head>
 <body>
-    <form action="https://github.com/" >
+    
+    <form  action="https://github.com/" >
      <label for="username"> Username:</label><br>
-      <input style="margin-bottom:10px" type="text"  name="username" id="username" placeholder="Pick a username"><br>
+      <input type="text"  name="username" id="username" placeholder="Pick a username"><br>
       <label for="email"> Email:</label><br>
-      <input style="margin-bottom:10px" type="email" name ="email" id="email" placeholder="you@example.com">
+      <input type="email" name ="email" id="email" placeholder="you@example.com">
       <br><label for="password">Password:</label><br>
-      <input style="margin-bottom:10px" type="password" name="password" id="password" placeholder="Create a password">
-     
-     <p>
-        Make sure it's more than 15 characters,<br>
-        or at least 8 characters,<br>
-        including a number, and a lowercase letter.
-    </p>
-      
-            <button class="button" formaction="https://github.com/" >Sign up for GitHub</button>
-     </form>
-        <span>
-           <br> By clicking "Sign up for GitHub", you agree to our <br> <a  href="https://help.github.com/articles/github-terms-of-service/"  target="_blank" >terms of service</a>
-            and <a  href="https://help.github.com/articles/github-privacy-statement/"  target="_blank" >privacy statement</a>.<br>We will occasionally send you
-            account related emails.
-        </span>
-        
+      <input type="password" name="password" id="password" placeholder="Create a password">
+    
 
+     <p >
+        Make sure it's more than 15 characters,
+        or at least 8 characters,<br>
+        including a number, and a lowercase letter.</p>
+      
+    <button class="button" formaction="https://github.com/" >Sign up for GitHub</button>
+     
+        <p>
+        By clicking "Sign up for GitHub", you agree to our <br> <a  href="https://help.github.com/articles/github-terms-of-service/"  target="_blank" >terms of service</a>
+            and <a  href="https://help.github.com/articles/github-privacy-statement/"  target="_blank" >privacy statement</a>.We will <br>occasionally send you
+            account related emails.
+        </p>
+    </form>
+        
 </body>
 </html>
