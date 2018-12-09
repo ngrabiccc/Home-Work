@@ -5,39 +5,54 @@
     <title>Domaci rad</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
     <style>
   a{
       color: blue;
       text-decoration: none;
      
   }
+  a:hover{
+    color: lightblue;
+  }
+  .button{
+        color:white;
+       background-color:green; 
+        border: 2px solid green;
+        border-radius: 20px;
+        padding: 15px 60px;
+        font-size: 15px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  .button:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color:black;
+  }
+  
     </style>
 </head>
 <body>
     <form action="https://github.com/" >
-      Username:<br>
-      <input type="text"  name="username" placeholder="Pick a username"><br>
-      Email:<br>
-      <input type="email" name ="email" placeholder="you@example.com">
-      <br>Password:<br>
-      <input type="password" name="password" placeholder="Create a password">
-     </form>
+     <label for="username"> Username:</label><br>
+      <input style="margin-bottom:10px" type="text"  name="username" id="username" placeholder="Pick a username"><br>
+      <label for="email"> Email:</label><br>
+      <input style="margin-bottom:10px" type="email" name ="email" id="email" placeholder="you@example.com">
+      <br><label for="password">Password:</label><br>
+      <input style="margin-bottom:10px" type="password" name="password" id="password" placeholder="Create a password">
+     
      <p>
         Make sure it's more than 15 characters,<br>
         or at least 8 characters,<br>
         including a number, and a lowercase letter.
     </p>
-        <form>
-            <input type="submit" style="font-face: 'Comic Sans MS'; font-size: larger; color:white; background-color:green;  border: 2px solid green" formaction="https://github.com/" value=" Sign up for GitHub "> 
+      
+            <button class="button" formaction="https://github.com/" >Sign up for GitHub</button>
      </form>
         <span>
-           <br> By clicking "Sign up for GitHub", you agree to our <br> <a href="https://help.github.com/articles/github-terms-of-service/"  target="_blank" >terms of service</a>
-            and <a href="https://help.github.com/articles/github-privacy-statement/"  target="_blank" >privacy statement</a>.<br>We will occasionally send you
+           <br> By clicking "Sign up for GitHub", you agree to our <br> <a  href="https://help.github.com/articles/github-terms-of-service/"  target="_blank" >terms of service</a>
+            and <a  href="https://help.github.com/articles/github-privacy-statement/"  target="_blank" >privacy statement</a>.<br>We will occasionally send you
             account related emails.
         </span>
         
 
 </body>
 </html>
-
